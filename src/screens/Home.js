@@ -1,8 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
-import {StatusBar, StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StatusBar, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Stories from '../components/Stories';
 
 const Home = () => {
   return (
@@ -35,6 +36,9 @@ const Home = () => {
           <Icon name="navigate-circle-outline" size={25} />
         </View>
       </View>
+      <ScrollView>
+        <Stories />
+      </ScrollView>
     </SafeAreaView>
   );
 };
